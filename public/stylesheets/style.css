@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Blog.jpg?w=768&ssl=1");
+}
+.book-item {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: aliceblue;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 10px;
+}
