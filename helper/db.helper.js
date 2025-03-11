@@ -23,6 +23,7 @@ module.exports = {
         return await Model.remove({ filter });
     },
     update: async (Model, body, filter, next) => {
-        return await Model.update(filter, {$set: body});
+        return await Model.updateOne(filter, { $set: body });
     }
+    
 }

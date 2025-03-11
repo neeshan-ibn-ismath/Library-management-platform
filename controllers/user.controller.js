@@ -1,5 +1,5 @@
 const { userService, borrowerService } = require("../services");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const { tokenHelper } = require("../helper");
 
 module.exports = {

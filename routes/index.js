@@ -7,8 +7,8 @@ const book = require('../model/book');
 
 /* GET home page. */
 router.get('/', async function (req, res, next) {
-  const user_count  = await userModel.count();
-  const book_count = await bookModel.count();
+  const user_count  = await userModel.countDocuments();
+  const book_count = await bookModel.countDocuments();
   const genre_count = await bookModel.find().distinct("genres");
 
   res.render('index', { title: 'Library Management System', user_count, book_count, genre_count: genre_count.length });
